@@ -1,0 +1,7 @@
+<div class="detail-card" *ngIf="employee">
+  <h3>Employee Details</h3>
+  <p><strong>Name:</strong> {{ employee.name }}</p>
+  <p><strong>Department:</strong> {{ employee.department }}</p>
+  <p><strong>Salary:</strong> {{ employee.salary | currency }}</p>
+  <p><strong>Age:</strong> {{ employee.age }}</p>
+</div>

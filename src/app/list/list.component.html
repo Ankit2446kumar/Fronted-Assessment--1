@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Salary</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees" (click)="onRowClick(emp)" class="clickable-row">
+      <td>{{ emp.name }}</td>
+      <td>{{ emp.department }}</td>
+      <td>{{ emp.salary | currency }}</td>
+      <td>{{ emp.age }}</td>
+    </tr>
+  </tbody>
+</table>
