@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee & Student Addition Form</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <div class="forms-wrapper">
+    
+    <!-- Employee Form -->
+    <div class="form-container">
+      <h2>Employee Addition Form</h2>
+      <form id="empForm">
+        <label for="empName">Full Name:</label>
+        <input type="text" id="empName" placeholder="Employee_Name">
+
+        <label for="empEmail">Email:</label>
+        <input type="email" id="empEmail" placeholder="Email@gmail.com">
+
+        <label for="empDept">Department:</label>
+        <select id="empDept">
+          <option value="">-- Select Department --</option>
+          <option>Engineering</option>
+          <option>HR</option>
+          <option>Marketing</option>
+          <option>Finance</option>
+        </select>
+
+        <label>Gender:</label>
+        <input type="radio" name="empGender" value="Male"> Male
+        <input type="radio" name="empGender" value="Female"> Female
+
+        <label for="empJoinDate">Joining Date:</label>
+        <input type="date" id="empJoinDate">
+
+        <label for="empSkills">Skills:</label>
+        <input type="checkbox" name="empSkills" value="Java"> Java
+        <input type="checkbox" name="empSkills" value="Python"> Python
+        <input type="checkbox" name="empSkills" value="React"> React
+
+        <label for="empNotes">Notes:</label>
+        <textarea id="empNotes" rows="4"></textarea>
+
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+
+    <!-- Student Form -->
+    <div class="form-container">
+      <h2>Student Addition Form</h2>
+      <form id="stuForm">
+        <label for="stuName">Full Name:</label>
+        <input type="text" id="stuName" placeholder="Student_Name">
+
+        <label for="stuEmail">Email:</label>
+        <input type="email" id="stuEmail" placeholder="Email@gmail.com">
+
+        <label for="stuCourse">Course:</label>
+        <select id="stuCourse">
+          <option value="">-- Select Course --</option>
+          <option>B.Tech</option>
+          <option>MBA</option>
+          <option>B.Sc</option>
+          <option>MCA</option>
+        </select>
+
+        <label for="stuDOB">Date of Birth:</label>
+        <input type="date" id="stuDOB">
+
+        <label>Gender:</label>
+        <input type="radio" name="stuGender" value="Male"> Male
+        <input type="radio" name="stuGender" value="Female"> Female
+
+        <label for="stuHobbies">Hobbies:</label>
+        <input type="checkbox" name="stuHobbies" value="Reading"> Reading
+        <input type="checkbox" name="stuHobbies" value="Sports"> Sports
+        <input type="checkbox" name="stuHobbies" value="Music"> Music
+
+        <label for="stuNotes">Notes:</label>
+        <textarea id="stuNotes" rows="4"></textarea>
+
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
